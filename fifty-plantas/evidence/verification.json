@@ -1,0 +1,32 @@
+{
+  "date_utc": "2026-10-29T22:58:50.059493+00:00",
+  "project": "fifty-plantas",
+  "version": "0.1.0",
+  "runtime": "v24.22.1",
+  "tests": {
+    "tests": 6,
+    "pass": 6,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "typescript": "strict build passed",
+  "dependency_advisories_reported": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "scope": "Local synthetic application; no deployment, real meetings, external notifications or paid services.",
+  "screenshots": [],
+  "browser_review": {
+    "desktop": "not performed",
+    "registration": "not applicable",
+    "final_changes": "not visually verified",
+    "mobile": "responsive implementation present; browser/device verification pending",
+    "limitation": "Automatic approval review denied further browser observation because of usage limit. No alternate browser route was used."
+  },
+  "security_review": "read-only static surface, dependency advisory check, no independent audit"
+}

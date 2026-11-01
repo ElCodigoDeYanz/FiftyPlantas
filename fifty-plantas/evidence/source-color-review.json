@@ -1,0 +1,31 @@
+{
+  "scope": "source-level foreground adjustments against the paper reference; not a rendered WCAG audit",
+  "browser_verification": "pending after changes because browser review reached usage limit",
+  "changed_colors": {
+    "#81956e": "#505e44",
+    "#68795f": "#52604b",
+    "#75846a": "#56614e",
+    "#687c5d": "#526249",
+    "#78916a": "#516248",
+    "#6c7965": "#56604f",
+    "#75866c": "#56624f",
+    "#8c9c7b": "#58624e",
+    "#74826a": "#555f4e",
+    "#637b58": "#4f6245",
+    "#577348": "#4a623d",
+    "#718166": "#535e4a",
+    "#6e7f60": "#505d46",
+    "#647e54": "#4f6442",
+    "#778869": "#57644d",
+    "#66765e": "#505d4a",
+    "#637b55": "#4f6243",
+    "#74836b": "#55604f",
+    "#8a9b6f": "#576245",
+    "#6e7e5e": "#57644a",
+    "#718265": "#535f49",
+    "#61745a": "#53634d",
+    "#667a5c": "#506149",
+    "#466b3d": "#416338",
+    "#738468": "#54614c"
+  }
+}

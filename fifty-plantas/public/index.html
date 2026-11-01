@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Fifty Plantas: cuatro plantas de interior, cuidados básicos y fuentes para seguir aprendiendo."
+    />
+    <title>Fifty Plantas · un pequeño mundo verde</title>
+    <link rel="icon" href="/leaf.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/style.css" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#catalogo">Ir al catálogo</a>
+    <header>
+      <a class="logo" href="/"><span>❋</span> Fifty Plantas.</a>
+      <nav aria-label="Navegación">
+        <a href="#catalogo">Explorar plantas</a
+        ><a href="#como-leer">Antes de regar</a
+        ><button id="favorites-nav" type="button">
+          Mis favoritas <span id="favorite-count">0</span>
+        </button>
+      </nav>
+      <span class="edition">UNA PEQUEÑA GUÍA VERDE</span>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">OBSERVAR. APRENDER. CUIDAR.</p>
+          <h1>Un poco de verde.<br /><em>Una pausa para ti.</em></h1>
+          <p class="intro">
+            Conoce cuatro plantas de interior y aprende a mirar<br />lo que
+            necesitan, sin calendarios de riego rígidos.
+          </p>
+          <a class="button dark" href="#catalogo"
+            >Encontrar mi planta <span>↗</span></a
+          >
+          <p class="hero-note">
+            Información breve · fuentes enlazadas · sin crear cuenta
+          </p>
+        </div>
+        <div class="hero-botanical" aria-hidden="true">
+          <div class="circle"></div>
+          <svg viewBox="0 0 400 350" fill="none">
+            <path d="M161 262h115l-17 66h-79z" fill="#cda88d" />
+            <path
+              d="M219 274V70m0 149c-65-4-98-31-105-76 57-6 100 24 105 76m0-57c54-5 95-37 103-88-65 1-100 39-103 88m0-45c-43-7-58-40-46-79 42 16 60 44 46 79"
+              fill="#7e9775"
+              stroke="#52724f"
+              stroke-width="6"
+              stroke-linejoin="round"
+            />
+            <path
+              d="m219 217-73-53m73-2 73-62m-73 18-32-57"
+              stroke="#aec2a2"
+              stroke-width="3"
+            />
+            <path d="M140 261h160" stroke="#826d53" stroke-width="3" />
+            <path
+              d="m61 141 8-18 6 20 21 5-19 6-8 21-5-21-19-7z"
+              fill="#d2bb89"
+            /></svg
+          ><span class="art-label">crecer toma su tiempo.</span>
+        </div>
+      </section>
+      <section class="catalog-section" id="catalogo">
+        <div class="section-top">
+          <div>
+            <p class="eyebrow">TU PRIMER RINCÓN VERDE</p>
+            <h2>Conoce a tus próximas compañeras.</h2>
+          </div>
+          <p>
+            Ilustraciones orientativas,<br />no herramientas de identificación.
+          </p>
+        </div>
+        <form id="filters" class="filters" role="search">
+          <label class="search"
+            ><span class="sr-only">Buscar planta</span
+            ><input
+              id="query"
+              type="search"
+              placeholder="Busca por nombre común o botánico"
+              maxlength="100" /></label
+          ><label
+            ><span class="sr-only">Filtrar por luz</span
+            ><select id="light">
+              <option value="">Cualquier luz</option>
+              <option value="adaptable">Tolera distintos niveles</option>
+              <option value="indirecta">Luz brillante indirecta</option>
+            </select></label
+          ><label
+            ><span class="sr-only">Filtrar por riego</span
+            ><select id="water">
+              <option value="">Cualquier riego</option>
+              <option value="espaciado">Dejar secar entre riegos</option>
+              <option value="moderado">Riego según sustrato</option>
+            </select></label
+          ><label class="favorite-filter"
+            ><input id="only-favorites" type="checkbox" /> Mis favoritas</label
+          ><button class="button light" id="reset" type="button">
+            Limpiar
+          </button>
+        </form>
+        <p
+          id="result-count"
+          class="result-count"
+          role="status"
+          aria-live="polite"
+        ></p>
+        <div id="plants" class="plant-grid"></div>
+      </section>
+      <section class="care-note" id="como-leer">
+        <span>☀</span>
+        <div>
+          <p class="eyebrow">ANTES DE REGAR</p>
+          <h2>Observa la planta, no solo el calendario.</h2>
+          <p>
+            La luz, la maceta, el drenaje y el ambiente cambian cuánto tarda en
+            secarse el sustrato. Estas fichas son orientativas; consulta la guía
+            completa y adapta el cuidado a tus condiciones.
+          </p>
+        </div>
+        <a
+          class="button outline"
+          href="https://www.rhs.org.uk/plants/spider-plants/growing-guide"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Seguir aprendiendo en RHS ↗</a
+        >
+      </section>
+    </main>
+    <footer>
+      <a class="logo" href="/">Fifty Plantas.</a>
+      <p>
+        Una pequeña creación de <strong>Yanz Studio Systèmes</strong
+        ><br />Nombre provisional · contenido revisado el 29/10/2026
+      </p>
+      <p>
+        Favoritos guardados solo en este navegador.<br />Sin cuentas, analítica
+        ni servicios externos de la aplicación.
+      </p>
+    </footer>
+    <dialog id="detail" aria-labelledby="detail-title">
+      <div class="dialog-header">
+        <p class="eyebrow">UNA PLANTA, SU CONTEXTO</p>
+        <button id="close-detail" class="close" aria-label="Cerrar ficha">
+          ×
+        </button>
+      </div>
+      <div id="detail-content"></div>
+    </dialog>
+    <div
+      id="notice"
+      class="notice"
+      role="status"
+      aria-live="polite"
+      hidden
+    ></div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+✔ catálogo pequeño, identificadores únicos y fuentes primarias HTTPS (0.941517ms)
+✔ búsqueda encuentra nombre común, botánico y acentos (0.366532ms)
+✔ filtros combinados y favoritos funcionan sin algoritmo (0.670008ms)
+✔ almacenamiento corrupto o ajeno no rompe favoritos (0.227232ms)
+✔ marcar y desmarcar favoritos es idempotente por identificador (0.189756ms)
+✔ sitio estático sirve el contenido y limita rutas y métodos (38.083757ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 170.124778
